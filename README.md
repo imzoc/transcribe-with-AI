@@ -46,10 +46,10 @@ For example, on MacOS (I have already moved my recording, "interview.m4a", to th
 	`README.md		interiew.m4a		transcribe.py`<br><br>
 6. You need to change one line of code so that the script uses your
 file, because right now it's configured to use mine! Read the code
-and the in-line comments I made, but don't worry about
-understanding it.
+and the in-line comments I made and edit where it indicates for you to, but don't worry too much about
+understanding it. It just needs to work.
 9. Run the script! Make sure the command-line interface is still
-in the correct folder and run `python3 transcribe.py`. It can take
+in the target folder and run `python3 transcribe.py`. It can take
 a few minutes on some computers so be patient.
 
 ## A little extra explanation
