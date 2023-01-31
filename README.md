@@ -35,14 +35,14 @@ that this script and the file you want to transcribe is in.
   command-line to the target folder. Double-pressing tab at any
   point while you type the path will show you which paths you can choose 
   and may even auto-complete it for you if there's only one path.
-For example, on MacOS:<br><br>
+For example, on MacOS (I have already moved my recording, "interview.m4a", to the target directory):<br><br>
 	`(base) zachary@Lizard-3 ~ % pwd`<br>
 	`/Users/zachary`<br>
 	`(base) zachary@Lizard-3 ~ % ls`<br>
 	`7zz	                Documents		Passwords.kdbx  	libraries`<br>
 	`Applications		Downloads		Pictures		Library`<br>
-	`(base) zachary@Lizard-3 ~ % cd Documents/github/FSHD-whisper-tutorial/`<br>
-	`(base) zachary@Lizard-3 FSHD-whisper-tutorial % ls`<br>
+	`(base) zachary@Lizard-3 ~ % cd Documents/github/transcribe-with-AI/`<br>
+	`(base) zachary@Lizard-3 transcribe-with-AI % ls`<br>
 	`README.md		interiew.m4a		transcribe.py`<br><br>
 6. You need to change one line of code so that the script uses your
 file, because right now it's configured to use mine! Read the code
