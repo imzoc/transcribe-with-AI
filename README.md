@@ -13,7 +13,7 @@ Python 2.X.X or something), you can download an up-to-date version
 of Python from https://www.python.org/downloads/.
 3. On the command-line, run `python3 -m ensurepip --upgrade` to make
 sure that "pip", which is Python's package manager, is installed.
-Then, also on the command-line run `pip install pydub whisper`. This will download the
+Then, also on the command-line run `pip install pydub whisper os`. This will download the
 packages that we want to use.
 4. Put this script ("transcribe.py") in the same folder/directory
 as the file you want to transcribe. This can be in your Documents
