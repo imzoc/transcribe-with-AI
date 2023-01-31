@@ -1,10 +1,10 @@
 # Transcribe with AI
 ## Purpose
-The Python script in this repository will transcribe a file that contains audio and output a text file.
+The transcribe.py script in this repository can transcribe a file that contains audio and output a text file.
 ## Requirements
 Transcribing an audio file with my transcribe.py script requires having Python on your computer, editing one line of code in the transcribe.py file itself,
 and running a few commands via the command-line. See "Usage" for detailed instructions.
-## Usage (if you're a newbie :3)
+## Usage
 1. Open a command-line interface (terminal.app an MacOS, cmd.exe
 on Windows, and you can figure it out if you're on Linux :^)).
 2. Make sure you have Python installed on your computer. You can
