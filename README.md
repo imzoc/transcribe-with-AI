@@ -45,3 +45,15 @@ understanding it.
 9. Run the script! Make sure the command-line interface is still
 in the correct folder and run "python3 transcribe.py". It can take
 a few minutes on some computers so be patient.
+
+## A little extra explanation
+When we make the objects "stream", "model", and "transcription" from
+modules that we imported (code that other people wrote), the objects
+inherit a bunch of properties and methods. The great thing about this
+is that we don't need to know how exactly that code that we imported
+works; we just need to know how to use it. All I actually did here was
+read the appropriate documentation (which I provided links to in-line)
+and figure out how to use those methods and attributes (this is what an
+"API" is). This simplifies the programming process immensely and
+allows programmers to easily and efficiently use other programmers'
+code, as can be seen here!
