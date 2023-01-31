@@ -20,7 +20,7 @@ import whisper
 stream = pydub.AudioSegment.from_file("interiew.m4a", "m4a")  # Modify this!
 stream.set_channels(1)
 stream.set_frame_rate(16000)
-stream.export("prepped.mp3", format="mp3")
+stream.export("prepped.mp3", format="mp3")  # no need to modify, this will be deleted.
 
 ### USING WHISPER (https://github.com/openai/whisper#python-usage)
 model = whisper.load_model("base")
