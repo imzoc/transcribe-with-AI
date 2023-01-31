@@ -5,8 +5,9 @@ The transcribe.py script in this repository can transcribe a file that contains 
 Transcribing an audio file with my transcribe.py script requires having Python on your computer, editing one line of code in the transcribe.py file itself,
 and running a few commands via the command-line. See "Usage" for detailed instructions.
 ## Usage
-1. Open a command-line interface (terminal.app an MacOS, cmd.exe
-on Windows, and you can figure it out if you're on Linux :^)).
+1. Open a command-line interface
+* On MacOS, it's called Terminal.app. It is located in the ~/Applications/Utilities/ folder, or you can press `⌘`+`space` and type "terminal.app" in the search bar. 
+* On Windows, it's called cmd.exe. You can search for it by pressing the Windows key and typing "cmd.exe".
 2. Make sure you have Python installed on your computer. You can
 check by running `python3 --version` or `python --version` on the
 command-line. If it looks something like:<br><br>
