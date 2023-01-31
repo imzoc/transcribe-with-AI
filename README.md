@@ -45,8 +45,8 @@ For example, on MacOS (I have already moved my recording, "interview.m4a", to th
 	`(base) zachary@Lizard-3 transcribe-with-AI % ls`<br>
 	`README.md		interiew.m4a		transcribe.py`<br><br>
 6. You need to change one line of code so that the script uses your
-file, because right now it's configured to use mine! Read the code
-and the in-line comments I made and edit where it indicates for you to, but don't worry too much about
+file, because right now it's configured to use mine! Read the description and notes at the top of the script
+and edit the code where the in-line comment indicates for you to, but don't worry too much about
 understanding it. It just needs to work.
 9. Run the script! Make sure the command-line interface is still
 in the target folder and run `python3 transcribe.py`. It can take
