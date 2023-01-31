@@ -51,10 +51,9 @@ When we make the objects "stream", "model", and "transcription" from
 modules that we imported, those objects inherit a bunch of properties
 and methods from code that other people wrote. The great thing about this
 is that we don't need to know how exactly that code works; we just need to know
-how to use those methods and attributes (a.k.a. the application programming interface, or API).
-All I actually did here was
+how to use those methods and attributes. All I did here was
 read the appropriate documentation (which I provided links to in-line in the code)
 and figure out how to use those methods and attributes.
 This simplifies the programming process immensely and
 allows programmers to easily and efficiently use other programmers'
-code, as can be seen here! 
+code, as can be seen here!
