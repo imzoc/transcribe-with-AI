@@ -33,7 +33,7 @@ For example, on MacOS:<br><br>
 	`(base) zachary@Lizard-3 ~ % pwd`<br>
 	`/Users/zachary`<br>
 	`(base) zachary@Lizard-3 ~ % ls`<br>
-	`7zz	                Documents		Passwords.kdbx  libraries`<br>
+	`7zz	                Documents		Passwords.kdbx  	libraries`<br>
 	`Applications		Downloads		Pictures		Library`<br>
 	`(base) zachary@Lizard-3 ~ % cd Documents/github/FSHD-whisper-tutorial/`<br>
 	`(base) zachary@Lizard-3 FSHD-whisper-tutorial % ls`<br>
