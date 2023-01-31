@@ -1,4 +1,4 @@
-# FSHD-whisper-tutorial
+# Transcribe with AI
 ## Usage (if you're a newbie :3)
 1. Open a command-line interface (terminal.app an MacOS, cmd.exe
 on Windows, and you can figure it out if you're on Linux :^)).
