@@ -5,8 +5,8 @@
     transcribe a file that contains audio. It outputs to a .txt file.
     Note: most input file formats will work as long as they have audio
     in them somewhere. 
-    Note: you must replace "interiew.m4a" with the file you want to
-    transcribe and "m4a" with the appropriate file extension.
+    Note: on line 20, you must replace "interiew.m4a" with the file you
+    want to transcribe and "m4a" with the appropriate file extension.
     Note: if you're a newbie, see README.md
     Note: if you're also curious and want a little extra explanation,
     also see README.md.
