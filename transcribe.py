@@ -1,9 +1,8 @@
 '''
     Author: Zachary Keyes
     Class: FSHD 150B1
-    Description: This Python script uses OpenAI Whisper and PyDub
-    to transcribe the audio file from prep_audio.py. It then puts it
-    into a .txt file. 
+    Description: This Python script uses OpenAI Whisper and PyDub to
+    transcribe a file that contains audio. It outputs to a .txt file.
 
     If you're a newbie, see README.md
     If you're also curious and want a little extra explanation, also
