@@ -10,7 +10,7 @@ and running a few commands via the command-line. See "Usage" for detailed instru
 * On Windows, it's called cmd.exe. You can search for it by pressing the Windows key and typing "cmd.exe".
 2. Make sure you have Python installed on your computer. You can
 check by running `python3 --version` or `python --version` on the
-command-line. If it looks something like:<br><br>
+command-line interface you just opened. If it looks something like:<br><br>
 `(base) zachary@Lizard-3 ~ % python3 --version`<br>
 `Python 3.9.7`<br><br>
 Then you're good to go. If it says something like "python3 not
