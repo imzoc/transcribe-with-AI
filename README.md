@@ -3,17 +3,17 @@
 1. Open a command-line interface (terminal.app an MacOS, cmd.exe
 on Windows, and you can figure it out if you're on Linux :^)).
 2. Make sure you have Python installed on your computer. You can
-check by running "python3 --version" or "python --version" on the
-command-line. If it looks something like:
-	(base) zachary@Lizard-3 ~ % python3 --version
-	Python 3.9.7
+check by running `python3 --version` or `python --version` on the
+command-line. If it looks something like:<br><br>
+`(base) zachary@Lizard-3 ~ % python3 --version`<br>
+`Python 3.9.7`<br><br>
 Then you're good to go. If it says something like "python3 not
 found" or if the version is much lower than 3.9.7 (like if it's
 Python 2.X.X or something), you can download an up-to-date version
 of Python from https://www.python.org/downloads/.
-3. On the command-line, run "python3 -m ensurepip --upgrade" to make
+3. On the command-line, run `python3 -m ensurepip --upgrade` to make
 sure that "pip", which is Python's package manager, is installed.
-Then run "pip install pydub whisper". This will download the
+Then, also on the command-line run `pip install pydub whisper`. This will download the
 packages that we want to use.
 4. Put this script ("transcribe.py") in the same folder/directory
 as the file you want to transcribe. This can be in your Documents
@@ -29,15 +29,15 @@ that this script and the file you want to transcribe is in.
   command-line to the target folder. Double-pressing tab at any
   point while you type the path will show you which paths you can choose 
   and may even auto-complete it for you if there's only one path.
-For example, on MacOS:
-	(base) zachary@Lizard-3 ~ % pwd
-	/Users/zachary
-	(base) zachary@Lizard-3 ~ % ls
-	7zz	                Documents		Passwords.kdbx  libraries
-	Applications		Downloads		Pictures		Library
-	(base) zachary@Lizard-3 ~ % cd Documents/github/FSHD-whisper-tutorial/
-	(base) zachary@Lizard-3 ~ % ls
-	README.md		interiew.m4a		transcribe.py
+For example, on MacOS:<br><br>
+	`(base) zachary@Lizard-3 ~ % pwd`<br>
+	`/Users/zachary`<br>
+	`(base) zachary@Lizard-3 ~ % ls`<br>
+	`7zz	                Documents		Passwords.kdbx  libraries`<br>
+	`Applications		Downloads		Pictures		Library`<br>
+	`(base) zachary@Lizard-3 ~ % cd Documents/github/FSHD-whisper-tutorial/`<br>
+	`(base) zachary@Lizard-3 FSHD-whisper-tutorial % ls`<br>
+	`README.md		interiew.m4a		transcribe.py`<br><br>
 6. You need to change one line of code so that the script uses your
 file, because right now it's configured to use mine! Read the code
 and the in-line comments I made, but don't worry about
