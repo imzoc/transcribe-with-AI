@@ -2,7 +2,7 @@
 ## Purpose
 As a computer science student taking 150B1, I used OpenAI's Whisper model to transcribe my interview recording. It saved me a lot of time, and instead of writing the entire thing, I just had to go through and make some quick fixes to the AI transcription. This tutorial will help you do that, and hopefully you can pick up some computer science concepts along the way :)
 
-If you have recommendations, please open an [issue](https://github.com/imzoc/transcribe-with-AI/issues).
+If you have recommendations, please open an [issue](https://github.com/imzoc/transcribe-with-AI/issues) or email me (my netid is zachk).
 
 ## Requirements
 Transcribing an audio file with transcribe.py requires:
