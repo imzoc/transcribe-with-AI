@@ -1,6 +1,6 @@
 # Transcribe with AI
 ## Purpose
-As a computer science student taking FSHD 150B1 at the University of Arizona, I used OpenAI's Whisper model to transcribe a long interview recording I took for my honors assignment. It saved me a lot of time, and instead of writing the entire thing, I just had to go through and make some quick fixes to the imperfect (but pretty decent) AI transcription. This tutorial will help you do that, and hopefully you can pick up some computer science concepts along the way :)
+As a computer science student taking FSHD 150B1 at the University of Arizona, I used OpenAI's Whisper model to transcribe a long interview recording I took for my honors assignment. It saved me a lot of time, and instead of transcribing the entire thing by hand, I just had to go through and make some quick fixes to the imperfect (but pretty decent) AI transcription. This tutorial will help you do that, and hopefully you can pick up some computer science concepts along the way :)
 
 If you have recommendations, please open an [issue](https://github.com/imzoc/transcribe-with-AI/issues) or email me (my netid is zachk).
 
