@@ -24,7 +24,7 @@ This README document will walk you through the process.
 	* From the CLI, run `python3 -m ensurepip --upgrade`.
 	* Then run `pip install pydub whisper os`. If the CLI doesn't recognize "pip", try "pip3". This should download those packages, we will import into our own program.
 4. Get your files in order (important, and I'll explain why later!).
-	* Download the latest [release](https://github.com/imzoc/transcribe-with-AI/releases) to your Downloads folder and unzip it.
+	* Download the latest zipped [release](https://github.com/imzoc/transcribe-with-AI/releases) file to your Downloads folder and unzip it.
 	* Use your file explorer (Finder, for example, on macOS) to move any audio files you want to transcribe into the unzipped folder you just made.
 5. Open transcribe.py __in a text editor__ and make some quick changes.
 	* The easiest way to do open a script like this is by right clicking on transcribe.py and selecting "Open with Notepad/TextEdit". Just make sure it renders the file as text and doesn't run it just yet :)
