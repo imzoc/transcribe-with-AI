@@ -6,7 +6,7 @@ Transcribing an audio file with my transcribe.py script requires having Python o
 and running a few commands via the command-line. See "Usage" for detailed instructions.
 ## Usage
 1. Open a command-line interface
-* On MacOS, it's called Terminal.app. It is located in the ~/Applications/Utilities/ folder, or you can press `⌘`+`space` and type "terminal.app" in the search bar. 
+* On MacOS, it's called Terminal.app. It is located in the ~/Applications/Utilities/ folder, or you can press `⌘`+`space` and type "terminal.app" in the Spotlight Search bar. 
 * On Windows, it's called cmd.exe. You can search for it by pressing the Windows key and typing "cmd.exe".
 2. Make sure you have Python installed on your computer. You can
 check by running `python3 --version` or `python --version` on the
@@ -19,7 +19,7 @@ Python 2.X.X or something), you can download an up-to-date version
 of Python from https://www.python.org/downloads/.
 3. On the command-line, run `python3 -m ensurepip --upgrade` to make
 sure that "pip", which is Python's package manager, is installed.
-Then, also on the command-line run `pip install pydub whisper os`. This will download the
+Then, also on the command-line, run `pip install pydub whisper os`. If this doesn't work try replacing "pip" with "pip3". This will download the
 packages that we want to use.
 4. Put this script ("transcribe.py") in the same folder/directory
 as the file you want to transcribe. This can be in your Documents
