@@ -1,65 +1,57 @@
 # Transcribe with AI
 ## Purpose
-The transcribe.py script in this repository can transcribe a file that contains audio and output a text file with the transcription.
+transcribe.py can transcribe an audio file, generate a transcription using AI, and output a text file with the transcription.
 ## Requirements
-Transcribing an audio file with my transcribe.py script requires having Python on your computer, editing one line of code in the transcribe.py file itself,
-and running a few commands via the command-line. See "Usage" for detailed instructions.
-## Usage
-1. Open a command-line interface
-* On MacOS, it's called Terminal.app. It is located in the ~/Applications/Utilities/ folder, or you can press `⌘`+`space` and type "terminal.app" in the Spotlight Search bar. 
-* On Windows, it's called cmd.exe. You can search for it by pressing the Windows key and typing "cmd.exe".
-2. Make sure you have Python installed on your computer. You can
-check by running `python3 --version` or `python --version` on the
-command-line interface you just opened. If it looks something like:<br><br>
-`(base) zachary@Lizard-3 ~ % python3 --version`<br>
-`Python 3.9.7`<br><br>
-Then you're good to go. If it says something like "python3 not
-found" or if the version is much lower than 3.9.7 (like if it's
-Python 2.X.X or something), you can download an up-to-date version
-of Python from https://www.python.org/downloads/.
-3. On the command-line, run `python3 -m ensurepip --upgrade` to make
-sure that "pip", which is Python's package manager, is installed.
-Then, also on the command-line, run `pip install pydub whisper os`. If this doesn't work try replacing "pip" with "pip3". This will download the
-packages that we want to use.
-4. Use a file explorer (Finder, for example) to move transcribe.py in the same folder/directory
-as the file you want to transcribe. This can be in your Documents
-folder, Downloads folder, or wherever, but make sure they're in the
-same one! This isn't necessary if you're comfortable using "absolute paths".
-5. On the command-line interface, navigate to the folder/directory
-that this script and the file you want to transcribe is in as follows:
-* Running `pwd` (which stands for "print working directory") will
-  tell you which directory your command-line interface is
-  currently in.
-* Running `ls` will list the files and folders in that directory
-* Running `cd` [path to target folder]" will navigate
-to the target folder. Double-pressing tab at any
-  point while you type the path will show you which paths you can choose 
-  and may even auto-complete it for you if there's only one path.
-For example, on MacOS (I have already moved my recording, "interview.m4a", to the target directory):<br><br>
+Transcribing an audio file with transcribe.py requires:
+1. Having Python on your computer
+2. Editing some variables in transcribe.py (just so that Python knows where your files are, nothing crazy :) )
+3. Running some basic commands from a command-line interface (aka CLI).
+
+This README document will walk you through the process.
+
+## Step-by-step
+1. Open a CLI:
+	* On MacOS, you want to open Terminal.app. Open finder, go to your Applications folder, open the Utilities sub-folder, and you should see it. Alternatively, you can be cool and use Spotlight Search (press `⌘`+`space`, type whatever application you want--in this case, terminal.app, and press enter :) )
+	* On Windows, open cmd.exe. Press the Windows key and type "cmd.exe". 
+2. Make sure you have Python on your computer.
+	* From the CLI, run `python --version`. If it any version above 3.8, like `Python 3.9.7`, you're probably good to go. If it says something like "python3 not found", try "python3" instead of "python".
+		* If you're using macOS, also try "/usr/bin/python3" or "/usr/local/bin/python3" instead of "python". This is called using an *absolute path* and should almost always work if you have Python on your computer. This is because Python is actually just a binary file, and it's almost always located in /usr/bin or /usr/local/bin. Again, only on UNIX-like operating systems like macOS; I have no idea how the heck Window does this, so consult the honorific ChatGPT for help if you need it.
+	* If your computer can't find Python (or if it's on out-of-date version, like Python 2.x.x), [download the most up-to-date version of Python](https://www.python.org/downloads/).
+3. Make sure you have all of the packages we will use. This requires a tool called "pip".
+	* From the CLI, run `python3 -m ensurepip --upgrade`. 
+	* Then run `pip install pydub whisper os`. If the CLI doesn't recognize "pip", try "pip3".
+4. Get your files in order (important! This program uses *relative paths* to interact with the filesystem, which I will explain later).
+	* Download the latest [release](https://github.com/imzoc/transcribe-with-AI/releases) to your Downloads folder and unzip it.
+	* Use your file explorer (Finder, for example, on macOS) to move any audio files you want to transcribe into the unzipped folder you just made.
+5. Open transcribe.py __in a text editor__ and make some quick changes.
+	* The easiest way to do open a script like this is by right clicking on transcribe.py and selecting "Open with Notepad/TextEdit". Just make sure it renders the file as text and doesn't run it just yet :)
+	* Edit the the file_name and audio_format variables as appropriate for your audio files.
+6. Go back to the CLI and navigate to the "target" directory. From there, we will run our script.
+	* Run `pwd` to print the directory you're currently in.
+	* Run `ls` to list the files and folders in the directory you're currently in.
+	* Run `cd [path to target folder]` to navigate
+to a sub-directory.
+
+	There are loads of useful guides out there on filesystem navigation. If you're having trouble, consult ChatGPT (unironically, it will probably be able to help you :) ) Here's an example from my macOS (all of my commands are after the "%" symbol):
+
+
 	`(base) zachary@Lizard-3 ~ % pwd`<br>
-	`/Users/zachary`<br>
+	`/Users/zachary`
+
 	`(base) zachary@Lizard-3 ~ % ls`<br>
 	`7zz	                Documents		Passwords.kdbx  	libraries`<br>
-	`Applications		Downloads		Pictures		Library`<br>
-	`(base) zachary@Lizard-3 ~ % cd Documents/github/transcribe-with-AI/`<br>
-	`(base) zachary@Lizard-3 transcribe-with-AI % pwd`<br>
-	`/Users/zachary/Documents/github/transcribe-with-AI`<br>
-	`(base) zachary@Lizard-3 transcribe-with-AI % ls`<br>
-	`README.md		interiew.m4a		transcribe.py`<br><br>
-6. Change the file_name and audio_format variables in transcribe.py.
-7. Make sure the command-line interface is still
-in the target folder and run `python3 transcribe.py`. It can take
-a while depending on your specs (it took two minutes on my macbook
-with Intel i5 @2GHz, but idk if it uses CPU or GPU more) so be patient.
+	`Applications		Downloads		Pictures		Library`
 
-## A little extra explanation
-When we make the objects "stream", "model", and "transcription" from
-modules that we imported, those objects inherit a bunch of properties
-and methods from code that other people wrote. The great thing about this
-is that we don't need to know how exactly that code works; we just need to know
-how to use those methods and attributes. All I did here was
-read the appropriate documentation (which I provided links to in-line in the code)
-and figure out how to use those methods and attributes.
-This simplifies the programming process immensely and
-allows programmers to easily and efficiently use other programmers'
-code, as can be seen here!
+	`(base) zachary@Lizard-3 ~ % cd Downloads/transcribe-with-AI-1.0.0/`
+
+	`(base) zachary@Lizard-3 transcribe-with-AI-1.0.0 % pwd`<br>
+	`/Users/zachary/Downloads/transcribe-with-AI-1.0.0`
+
+	`(base) zachary@Lizard-3 transcribe-with-AI % ls`<br>
+	`README.md		interiew.m4a		transcribe.py`
+
+
+7. Run the script.
+	* From the __same__ CLI window (remember relative paths? Everything we do now is *relative* to the directory our CLI is in), run `python3 transcribe.py`. If it looks like the window froze, it's working. It can take a while... don't mess with it.
+
+8. Find the transcribed .txt file in the same directory!
