@@ -10,7 +10,7 @@ Transcribing an audio file with transcribe.py requires:
 2. Editing some variables in transcribe.py (just so that Python knows where your files are, nothing crazy :) )
 3. Running some basic UNIX-style commands from a command-line interface (aka CLI).
 
-This README document will walk you through the process.
+This README document will walk you through the process. If you know what you're doing, download the Python script from [releases](https://github.com/imzoc/transcribe-with-AI/releases).
 
 ## Step-by-step
 1. Open a CLI:
