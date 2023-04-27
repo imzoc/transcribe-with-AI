@@ -24,7 +24,7 @@ packages that we want to use.
 4. Use a file explorer (Finder, for example) to move transcribe.py in the same folder/directory
 as the file you want to transcribe. This can be in your Documents
 folder, Downloads folder, or wherever, but make sure they're in the
-same one!
+same one! This isn't necessary if you're comfortable using "absolute paths".
 5. On the command-line interface, navigate to the folder/directory
 that this script and the file you want to transcribe is in as follows:
 * Running `pwd` (which stands for "print working directory") will
@@ -46,13 +46,11 @@ For example, on MacOS (I have already moved my recording, "interview.m4a", to th
 	`/Users/zachary/Documents/github/transcribe-with-AI`<br>
 	`(base) zachary@Lizard-3 transcribe-with-AI % ls`<br>
 	`README.md		interiew.m4a		transcribe.py`<br><br>
-6. You need to change one line of code so that the script uses your
-file, because right now it's configured to use mine! Read the description and notes at the top of the script
-and edit the code where the in-line comment indicates for you to, but don't worry too much about
-understanding it. It just needs to work.
-9. Run the script! Make sure the command-line interface is still
+6. Change the file_name and audio_format variables in transcribe.py.
+7. Make sure the command-line interface is still
 in the target folder and run `python3 transcribe.py`. It can take
-a few minutes on some computers so be patient.
+a while depending on your specs (it took two minutes on my macbook
+with Intel i5 @2GHz, but idk if it uses CPU or GPU more) so be patient.
 
 ## A little extra explanation
 When we make the objects "stream", "model", and "transcription" from
