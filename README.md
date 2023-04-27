@@ -21,18 +21,18 @@ of Python from https://www.python.org/downloads/.
 sure that "pip", which is Python's package manager, is installed.
 Then, also on the command-line, run `pip install pydub whisper os`. If this doesn't work try replacing "pip" with "pip3". This will download the
 packages that we want to use.
-4. Put this script ("transcribe.py") in the same folder/directory
+4. Use a file explorer (Finder, for example) to move transcribe.py in the same folder/directory
 as the file you want to transcribe. This can be in your Documents
 folder, Downloads folder, or wherever, but make sure they're in the
 same one!
 5. On the command-line interface, navigate to the folder/directory
-that this script and the file you want to transcribe is in.
-* Running "pwd" (which stands for "print working directory") will
+that this script and the file you want to transcribe is in as follows:
+* Running `pwd` (which stands for "print working directory") will
   tell you which directory your command-line interface is
   currently in.
-* Running "ls" will list the files and folders in that directory
-* Running "cd [path to target folder]" will navigate the
-  command-line to the target folder. Double-pressing tab at any
+* Running `ls` will list the files and folders in that directory
+* Running `cd` [path to target folder]" will navigate
+to the target folder. Double-pressing tab at any
   point while you type the path will show you which paths you can choose 
   and may even auto-complete it for you if there's only one path.
 For example, on MacOS (I have already moved my recording, "interview.m4a", to the target directory):<br><br>
@@ -42,6 +42,8 @@ For example, on MacOS (I have already moved my recording, "interview.m4a", to th
 	`7zz	                Documents		Passwords.kdbx  	libraries`<br>
 	`Applications		Downloads		Pictures		Library`<br>
 	`(base) zachary@Lizard-3 ~ % cd Documents/github/transcribe-with-AI/`<br>
+	`(base) zachary@Lizard-3 transcribe-with-AI % pwd`<br>
+	`/Users/zachary/Documents/github/transcribe-with-AI`<br>
 	`(base) zachary@Lizard-3 transcribe-with-AI % ls`<br>
 	`README.md		interiew.m4a		transcribe.py`<br><br>
 6. You need to change one line of code so that the script uses your
