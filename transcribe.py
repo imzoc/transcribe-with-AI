@@ -1,6 +1,5 @@
 """
     Author: Zachary Keyes
-    Class: FSHD 150B1
     Description: This Python script uses OpenAI Whisper and PyDub to
     transcribe a file that contains audio. It outputs to a .txt file.
     
